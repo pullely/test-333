@@ -1,0 +1,11 @@
+{
+  "reponame": "test-333",
+  "productname": "test-333",
+  "productdomain": "test-333.dev",
+  "apibaseurl": "https://api.test-333.dev",
+  "subdomain": "rahulvarghesepullely",
+  "orunWorkspace": "org_6b2e86ccba644862b3abc4b225a0b176",
+  "githuborg": "pullely",
+  "epicSlug": "infra-baselining",
+  "domain": false
+}
