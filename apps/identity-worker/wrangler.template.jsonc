@@ -57,9 +57,18 @@
         }
       ],
       "services": [
-        // @cycle-break:identity-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0zMzMtbWVtYmVyc2hpcC13b3JrZXItc3RhZ2UiCiAgICAgICAgfSw=
-        // @cycle-break+nl:identity-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LTMzMy1wb2xpY3ktd29ya2VyLXN0YWdlIgogICAgICAgIH0=
-// @cycle-break:identity-worker->notifications-worker:LAogICAgICAgIHsKICAgICAgICAgICJiaW5kaW5nIjogIk5PVElGSUNBVElPTlNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtMzMzLW5vdGlmaWNhdGlvbnMtd29ya2VyLXN0YWdlIgogICAgICAgIH0=
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-333-membership-worker-stage"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-333-policy-worker-stage"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "test-333-notifications-worker-stage"
+        }
       ]
     },
     "prod": {
@@ -80,9 +89,18 @@
         }
       ],
       "services": [
-        // @cycle-break:identity-worker->membership-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiTUVNQkVSU0hJUF9XT1JLRVIiLAogICAgICAgICAgInNlcnZpY2UiOiAidGVzdC0zMzMtbWVtYmVyc2hpcC13b3JrZXItcHJvZCIKICAgICAgICB9LA==
-        // @cycle-break+nl:identity-worker->policy-worker:ewogICAgICAgICAgImJpbmRpbmciOiAiUE9MSUNZX1dPUktFUiIsCiAgICAgICAgICAic2VydmljZSI6ICJ0ZXN0LTMzMy1wb2xpY3ktd29ya2VyLXByb2QiCiAgICAgICAgfQ==
-// @cycle-break:identity-worker->notifications-worker:LAogICAgICAgIHsKICAgICAgICAgICJiaW5kaW5nIjogIk5PVElGSUNBVElPTlNfV09SS0VSIiwKICAgICAgICAgICJzZXJ2aWNlIjogInRlc3QtMzMzLW5vdGlmaWNhdGlvbnMtd29ya2VyLXByb2QiCiAgICAgICAgfQ==
+        {
+          "binding": "MEMBERSHIP_WORKER",
+          "service": "test-333-membership-worker-prod"
+        },
+        {
+          "binding": "POLICY_WORKER",
+          "service": "test-333-policy-worker-prod"
+        },
+        {
+          "binding": "NOTIFICATIONS_WORKER",
+          "service": "test-333-notifications-worker-prod"
+        }
       ]
     }
   }
